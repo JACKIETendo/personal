@@ -86,7 +86,7 @@ img{
 }
 /*---hero---*/
 #hero{
-    background: linear-gradient(rgb(0, 0, 0, 0.307), rgb(0, 0, 0, 0.238)), url(../images/CEO.jpg);
+    background: linear-gradient(rgb(0, 0, 0, 0.545), rgb(0, 0, 0, 0.550)), url(../images/new\ ceo.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -213,7 +213,7 @@ img{
     content: "";
     width: 100%;
     height: 70%;
-    background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url(../images/CEO.jpg);
+    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url(../images/CEO.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -270,3 +270,38 @@ footer .line{
     background-color: var(--c-brand);
     color: white;
 }
+
+#msg{
+    color: red;
+    display: block;
+}
+
+
+/*.slider{
+    margin: 50px auto;
+    width: 50%;
+}
+.img-box img{
+    width: 100%;
+}
+.btn{
+    border: none;
+    outline: none;
+    background: var(--c-brand);
+    padding: 10px 30px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px auto;
+}
+.btn:hover{
+    background: var(--c-body);
+    color: white;
+}
+.slider-img{
+    height: 570px;
+    width: 430px;
+    transition: var(--transition);
+    border: 2px solid var(--c-brand);
+    border-radius: 20px;
+}*/

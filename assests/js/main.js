@@ -24,3 +24,43 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+
+var slider_img = document.querySelector('.slider-img');
+var images = ['Untitled-10.jpg', 'Untitled-1.jpg', 'tj.png', 'business card one true.png', 'JOAN.png', 'ARENA.png'];
+var i = 0;
+
+function prev(){
+  if(i <= 0) i = images.length;
+  i--;
+  return setImg();
+}
+
+function next(){
+  if (i >= images.length - 1) i = -1;
+  i++;
+  return setImg();
+}
+
+function setImg(){
+  return slider_img.setAttribute('src', 'images/' + images[i]);
+}
+
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz-0VhlhtDW85-if--v2MvzvVBP3dq51s87VYF_dS-xDCvb26PZrI3oW79DT45ApCcrrA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>  {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('error!', error.message))
+    });
