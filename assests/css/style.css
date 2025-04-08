@@ -151,7 +151,7 @@ img{
 }
 /*----counter*/
 #counter{
-    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(../images/images.jpg);
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(../images/a.jpg);
     background-position: center;
     background-size: cover;
 }
