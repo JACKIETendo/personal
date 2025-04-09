@@ -48,7 +48,7 @@ function setImg(){
 
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbz-0VhlhtDW85-if--v2MvzvVBP3dq51s87VYF_dS-xDCvb26PZrI3oW79DT45ApCcrrA/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyo9PQKiA9i1j99fVg49N3_GIb56akuHXiO8yu4-gNfzX0pDFAqT8UoYmVNiB_J3CBUTg/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
   
